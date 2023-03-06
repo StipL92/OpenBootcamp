@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+    
+}
+
+.contenedor {
+
+    display: flex;
+    padding: 2rem;
+    gap: 5rem;
+
+}
+
+.barraL {
+    background-color: grey;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+}
+
+.principal {
+
+    text-align: center;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+
+@media (max-width: 640px) {
+    .contenedor {
+        flex-direction: column-reverse;
+    }
+    .barraL {
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+}
